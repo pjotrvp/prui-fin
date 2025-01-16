@@ -1,5 +1,4 @@
 <script setup>
-import { Link } from "@inertiajs/vue3";
 </script>
 
 <template>
@@ -14,8 +13,8 @@ import { Link } from "@inertiajs/vue3";
             >
                 <!-- Space between links -->
                 <div class="flex space-x-6">
-                    <Link href="/">Home</Link>
-                    <Link href="/about">About</Link>
+                    <Link :href="route('home')">Home</Link>
+                    <Link :href="route('about')">About</Link>
                 </div>
             </nav>
         </header>
