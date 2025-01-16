@@ -7,6 +7,6 @@ defineProps({
 <template>
     <Head title="About" />
     <div>
-        <h1>Hello {{ user }}</h1>
+        <h1>Hello {{ $page.props.auth.user }}</h1>
     </div>
 </template>
