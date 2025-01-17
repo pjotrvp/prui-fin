@@ -6,8 +6,8 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 Route::inertia('/', 'Home')->name('home');
-Route::inertia('/about', 'About', ['user' => 'Pjotr'])->name('about');
 
+Route::inertia('/register', 'Auth/Register')->name('register');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');

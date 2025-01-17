@@ -3,7 +3,6 @@
 <template>
     <Head :title="$page.component" />
     <div>
-        <h1>Hello world</h1>
+        <h1>Hello world, this is the home page</h1>
     </div>
-    <Link class="mt-[600px] block" href="/" preserve-scroll> Refresh</Link>
 </template>
