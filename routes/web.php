@@ -8,6 +8,7 @@ use Inertia\Inertia;
 Route::inertia('/', 'Home')->name('home');
 
 Route::inertia('/register', 'Auth/Register')->name('register');
+Route::post('/register', [AuthController::class, 'register']);
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
